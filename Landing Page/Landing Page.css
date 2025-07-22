@@ -270,7 +270,7 @@ header p {
 }
 
 footer {
-    background-color: #89898900;
+    background-color: transparent;
     color: #ffffff;
     text-align: center;
     padding: 1rem;
