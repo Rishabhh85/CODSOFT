@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Bitcount+Prop+Double:wght@100..900&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #898989;
+    color: #333;
+    line-height: 1.6;
+    height: 100vh;
+    font-family: 'Bitcount Prop Double', monospace;
+
+    background: radial-gradient(#606060 15%, transparent 16%), repeating-linear-gradient(0deg, transparent 6.5%, #898989 7%, #898989 9%, transparent 10%), linear-gradient(45deg, transparent 49%, #606060 49%, #606060 51%, transparent 51%), linear-gradient(-45deg, transparent 49%, #606060 49%, #606060 51%, transparent 51%);
+        background-size: 1em 1em;
+        background-color: #898989;
+        opacity: 1
+}
+
+header {
+    background-color: #282828;
+    color: #dbdbdb;
+    padding: 2rem;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+  --s: 43px; /* control the size*/
+  --c1: #3f3f3f;
+  --c2: #282828;
+  
+  --c:#0000 71%,var(--c1) 0 79%,#0000 0;
+  --_s:calc(var(--s)/2)/calc(2*var(--s)) calc(2*var(--s));
+  background:
+    linear-gradient(45deg,var(--c))
+     calc(var(--s)/-2) var(--_s),
+    linear-gradient(135deg,var(--c))
+     calc(var(--s)/2) var(--_s),
+    radial-gradient(var(--c1) 35%,var(--c2) 37%)
+     0 0/var(--s) var(--s);
+
+}
+
+.nav-buttons {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-buttons a {
+    color: white;
+    background-color: #4b5563;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Bitcount Prop Double', monospace;
+    font-weight: 300;
+}
+
+.nav-buttons a:hover {
+    background-color: #282828;
+    color: #e3e3e3;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-title img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.7rem;
+}
+
+header h1 {
+    font-size: 4.5rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Bitcount Prop Double', monospace;
+    font-weight: 400;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    color: #8d8d8d;
+    font-family: 'Bitcount Prop Double', monospace;
+}
+
+.explore-heading {
+    text-align: center;
+    font-size: 2rem;
+    color: #1f2937;
+    margin-top: 2rem;
+    font-family: 'Bitcount Grid Single', monospace;
+    font-weight: 600;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.tool-card {
+    background-color: #555555;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tool-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.75rem;
+}
+
+.tool-card h2 {
+    color: #dedede;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Bitcount Grid Single', monospace;
+    font-weight: 500;
+}
+
+.tool-card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #b9b9b9;
+    text-align: justify;
+    flex-grow: 1;
+    font-family: 'Bitcount Prop Double', monospace;
+    font-weight: 400;
+}
+
+.tool-card a {
+    text-decoration: none;
+    background-color: #1f2937;
+    color: #dedede;
+    padding: 0.5rem 1.5rem;
+    border-radius: 999px;
+    display: inline-block;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: auto;
+    font-family: 'Bitcount Grid Single', monospace;
+}
+
+.tool-card a:hover {
+    background-color: #dedede;
+    color: #1f2937;
+}
+
+.about-section {
+    padding: 3rem 2rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 3rem auto;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    color: #1f2937;
+    margin-bottom: 1rem;
+    font-family: 'Bitcount Grid Single', monospace;
+    font-weight: 600;
+}
+
+.about-section p {
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: justify;
+    line-height: 1.8;
+    font-family: 'Bitcount Prop Double', monospace;
+    font-weight: 400;
+}
+
+.contact-section {
+    padding: 3rem 2rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 3rem auto;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    color: #1f2937;
+    margin-bottom: 1rem;
+    font-family: 'Bitcount Grid Single', monospace;
+    font-weight: 600;
+}
+
+.contact-section p {
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Bitcount Prop Double', monospace;
+    font-weight: 400;
+}
+
+.contact-section .contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact-section .contact-links a {
+    background-color: #1f2937;
+    color: #dedede;
+    padding: 0.6rem 1.2rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'Bitcount Grid Single', monospace;
+}
+
+
+.contact-section .contact-links a img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+.contact-section .contact-links a:hover.gmail-btn {
+  background-color: #c5221f;
+}
+
+.contact-section .contact-links a:hover.linkedin-btn {
+  background-color: #1464c0;
+}
+
+.contact-section .contact-links a:hover.github-btn {
+  background-color: #6cc644;
+}
+
+footer {
+    background-color: transparent;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    /*margin-top: 0rem;*/
+    font-size: 0.9rem;
+    font-family: 'Bitcount Prop Double', monospace;
+    font-weight: 400;
+}
